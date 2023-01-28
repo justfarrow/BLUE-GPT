@@ -7,7 +7,7 @@ const ladBg = document.querySelector("#lad-bg");
 const ladImage = document.querySelector("#lad-image");
 
 const audio = new Audio();
-audio.src = "assets/e.mp3";
+audio.src = "assets/sounds/e.mp3";
 
 let loadInterval;
 
