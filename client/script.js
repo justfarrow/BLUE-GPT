@@ -3,6 +3,8 @@ import user from "./assets/user.svg";
 
 const form = document.querySelector("form");
 const chatContainer = document.querySelector("#chat_container");
+const ladBg = document.querySelector("#lad-bg");
+const ladImage = document.querySelector("#lad-image");
 
 let loadInterval;
 
@@ -115,4 +117,11 @@ form.addEventListener("keyup", (e) => {
   if (e.keyCode === 13) {
     handleSubmit(e);
   }
+});
+
+// on click of lad-image, reproduce e.mp3 sound located in assets folder
+ladBg.addEventListener("click", () => {
+  const audio = new Audio("./assets/e.mp3");
+  audio.play();
+  ladImage.classList.toggle("animate");
 });
