@@ -1,5 +1,6 @@
 import bot from "./assets/bot.svg";
 import user from "./assets/user.svg";
+import e from "./assets/sounds/e.mp3";
 
 const form = document.querySelector("form");
 const chatContainer = document.querySelector("#chat_container");
@@ -7,7 +8,7 @@ const ladBg = document.querySelector("#lad-bg");
 const ladImage = document.querySelector("#lad-image");
 
 const audio = new Audio();
-audio.src = "assets/sounds/e.mp3";
+audio.src = e;
 
 let loadInterval;
 
