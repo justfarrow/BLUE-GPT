@@ -121,7 +121,7 @@ form.addEventListener("keyup", (e) => {
 
 // on click of lad-image, reproduce e.mp3 sound located in assets folder
 ladBg.addEventListener("click", () => {
-  const audio = new Audio("./assets/e.mp3");
+  const audio = new Audio("/assets/e.mp3");
   audio.play();
   ladImage.classList.toggle("animate");
 });
