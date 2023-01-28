@@ -6,6 +6,9 @@ const chatContainer = document.querySelector("#chat_container");
 const ladBg = document.querySelector("#lad-bg");
 const ladImage = document.querySelector("#lad-image");
 
+const audio = new Audio();
+audio.src = "assets/e.mp3";
+
 let loadInterval;
 
 function loader(element) {
@@ -121,7 +124,6 @@ form.addEventListener("keyup", (e) => {
 
 // on click of lad-image, reproduce e.mp3 sound located in assets folder
 ladBg.addEventListener("click", () => {
-  const audio = new Audio("/assets/e.mp3");
   audio.play();
   ladImage.classList.toggle("animate");
 });
