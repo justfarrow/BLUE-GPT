@@ -1,23 +1,22 @@
 const cacheName = "LAD GPT";
 
 const assets = [
-  "/",
-  "/index.html",
-  "/manifest.json",
-  "/scripts.js",
-  "/styles.css",
-  "/assets/sounds/e.mp3",
-  "/assets/bot.svg",
-  "/assets/send.svg",
-  "/assets/user.svg",
-  "/public/lad-icon.png",
+  "../index.html",
+  "../manifest.json",
+  "../scripts.js",
+  "../styles.css",
+  "../assets/sounds/e.mp3",
+  "../assets/bot.svg",
+  "../assets/send.svg",
+  "../assets/user.svg",
+  "/lad-icon.png",
 ];
 
 // Cache all the files to make a PWA
 self.addEventListener("install", (e) => {
   e.waitUntil(
     caches.open(cacheName).then((cache) => {
-      return cache.addAll(assets);
+      cache.addAll(assets);
     })
   );
 });
