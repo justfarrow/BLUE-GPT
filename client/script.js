@@ -7,6 +7,7 @@ const form = document.querySelector("form");
 const chatContainer = document.querySelector("#chat_container");
 const ladBg = document.querySelector("#lad-bg");
 const ladImage = document.querySelector("#lad-image");
+const preamble = `Answer the following prompt accurately, but find a funny way to refer to the user as "lad".`;
 
 const audio = new Audio();
 audio.src = e;
@@ -97,7 +98,7 @@ const handleSubmit = async (e) => {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      prompt: data.get("prompt"),
+      prompt: `${preamble} ${data.get("prompt")}`,
     }),
   });
 
