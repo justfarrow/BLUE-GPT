@@ -9,35 +9,33 @@
   </head>
   <body>
     <main id="app">
-      <section>
-        <div id="chat_container">
-          <div id="lad-bg">
-            <img
-              src="/lad-icon.svg"
-              alt="lad"
-              id="lad-image"
-              width="200px"
-              height="200px"
-            />
-            <h1>LAD GPT</h1>
-            <p class="description">
-              Doesn't remember what the user said earlier in the conversation
-            </p>
-          </div>
+      <div id="chat_container">
+        <div id="lad-bg">
+          <img
+            src="/lad-icon.svg"
+            alt="lad"
+            id="lad-image"
+            width="200px"
+            height="200px"
+          />
+          <h1>LAD GPT</h1>
+          <p class="description">
+            Doesn't remember what the user said earlier in the conversation
+          </p>
         </div>
-        <form>
-          <textarea
-            name="prompt"
-            rows="1"
-            cols="1"
-            placeholder="Ask your lad..."
-            style="resize: none"
-          ></textarea>
-          <button type="submit">
-            <img src="assets/send.svg" alt="send" />
-          </button>
-        </form>
-      </section>
+      </div>
+      <form>
+        <textarea
+          name="prompt"
+          rows="1"
+          cols="1"
+          placeholder="Ask your lad..."
+          style="resize: none"
+        ></textarea>
+        <button type="submit">
+          <img src="assets/send.svg" alt="send" />
+        </button>
+      </form>
     </main>
 
     <script type="module" src="script.js"></script>
