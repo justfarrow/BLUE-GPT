@@ -1,4 +1,3 @@
-import bot from "./assets/bot.svg";
 import user from "./assets/user.svg";
 import e from "./assets/sounds/e.mp3";
 import lad from "/lad-icon.svg";
@@ -7,7 +6,7 @@ const form = document.querySelector("form");
 const chatContainer = document.querySelector("#chat_container");
 const ladBg = document.querySelector("#lad-bg");
 const ladImage = document.querySelector("#lad-image");
-const preamble = `Answer the following prompt accurately, but find a funny way to refer to the user as "lad".`;
+const preamble = `Answer the following prompt accurately, but find a funny way to refer to the user as "lad", "mate", "broski", "duderino" or "m8".`;
 
 const audio = new Audio();
 audio.src = e;
