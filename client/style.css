@@ -19,6 +19,19 @@ h1 {
   margin: 20px 0;
 }
 
+.description {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  /* card  */
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 26px;
+  background: #40414f;
+  border-radius: 10px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+}
+
 #app {
   width: 100vw;
   height: 100vh;
@@ -31,8 +44,7 @@ h1 {
 }
 
 #lad-image {
-  width: 55%;
-  height: 55%;
+  width: 200px;
   /* center image */
   margin: 0 auto;
   /* center image */
@@ -46,11 +58,6 @@ h1 {
   transform: scale(1.3) rotate(360deg);
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-}
-
-#lad-bg {
-  width: 100%;
-  height: 60%;
 }
 
 #chat_container {
