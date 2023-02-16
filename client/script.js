@@ -1,12 +1,15 @@
 import user from "./assets/user.svg";
 import e from "./assets/sounds/e.mp3";
-import lad from "/lad-icon.svg";
+import lad from "/lad-icon.png";
 
 const form = document.querySelector("form");
 const chatContainer = document.querySelector("#chat_container");
-const ladBg = document.querySelector("#lad-bg");
 const ladImage = document.querySelector("#lad-image");
-const preamble = `Answer the following prompt accurately, but find a funny way to refer to the user as "lad".`;
+const preamble = `Your name is Jeff. Only when the prompt involves the question "What's 9 + 10?", you answer "21". 
+                  Answer the following prompt accurately, but find a funny way to refer to the user as "lad", "mate", 
+                  "broski", "duderino" or "m8". Always act as a british person, try to use british idioms.
+                  However, if the user speaks to you in other language (e.g. Spanish, French), respond in that language. 
+                  You can speak multiple languages. If the user insults you or uses racial slurs, respond "that's not PC, brah!".`;
 
 const audio = new Audio();
 audio.src = e;
@@ -125,7 +128,7 @@ form.addEventListener("keyup", (e) => {
 });
 
 // on click of lad-image, reproduce e.mp3 sound located in assets folder
-ladBg.addEventListener("click", () => {
+ladImage.addEventListener("click", () => {
   audio.play();
-  ladImage.classList.toggle("animate");
+  toggle("animate");
 });
