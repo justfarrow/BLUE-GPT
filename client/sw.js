@@ -1,12 +1,23 @@
-const cacheName = "Lad GPT";
+const cacheName = "LAD GPT";
+
+const assets = [
+  "/",
+  "/index.html",
+  "/manifest.json",
+  "/scripts.js",
+  "/styles.css",
+  "/assets/sounds/e.mp3",
+  "/assets/bot.svg",
+  "/assets/send.svg",
+  "/assets/user.svg",
+  "/public/lad-icon.png",
+];
 
 // Cache all the files to make a PWA
 self.addEventListener("install", (e) => {
   e.waitUntil(
     caches.open(cacheName).then((cache) => {
-      // Our application only has two files here index.html and manifest.json
-      // but you can add more such as style.css as your app grows
-      return cache.addAll(["./", "./index.html", "./manifest.json"]);
+      return cache.addAll(assets);
     })
   );
 });

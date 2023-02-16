@@ -201,7 +201,12 @@
     <script>
       // Registering our Service worker
       if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("sw.js", { scope: "./" });
+        window.addEventListener("load", function () {
+          navigator.serviceWorker
+            .register("/sw.js")
+            .then((res) => console.log("service worker registered"))
+            .catch((err) => console.log("service worker not registered", err));
+        });
       }
     </script>
     <script type="module" src="script.js"></script>
