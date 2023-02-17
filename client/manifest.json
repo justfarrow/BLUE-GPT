@@ -10,13 +10,13 @@
   "icons": [
     {
       "src": "icons/manifest-icon-192.maskable.png",
-      "sizes": "192x192",
+      "sizes": "16x16",
       "type": "image/png",
       "purpose": "any"
     },
     {
       "src": "icons/manifest-icon-192.maskable.png",
-      "sizes": "192x192",
+      "sizes": "16x16",
       "type": "image/png",
       "purpose": "maskable"
     },
