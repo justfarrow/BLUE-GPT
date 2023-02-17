@@ -7,9 +7,9 @@
     <meta name="keywords" content="LAD GPT" />
     <meta name="author" content="LAD GPT" />
     <meta name="theme-color" content="#222831" />
-    <link rel="manifest" href="manifest.json" />
+    <link rel="manifest" href="./manifest.json" />
     <!-- icon for all devices -->
-    <link rel="icon" href="/lad-icon.png" />
+    <link rel="icon" href="public/lad-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LAD GPT</title>
     <link rel="stylesheet" href="style.css" />
@@ -201,12 +201,7 @@
     <script>
       // Registering our Service worker
       if ("serviceWorker" in navigator) {
-        window.addEventListener("load", function () {
-          navigator.serviceWorker
-            .register("/sw.js")
-            .then((res) => console.log("service worker registered"))
-            .catch((err) => console.log("service worker not registered", err));
-        });
+        navigator.serviceWorker.register("sw.js", { scope: "./" });
       }
     </script>
     <script type="module" src="script.js"></script>
