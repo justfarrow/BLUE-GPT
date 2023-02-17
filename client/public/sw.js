@@ -3,8 +3,8 @@ const cacheName = "LAD GPT";
 const assets = [
   "../index.html",
   "../manifest.json",
-  "../scripts.js",
-  "../styles.css",
+  "/script.js",
+  "/style.css",
   "../assets/sounds/e.mp3",
   "../assets/bot.svg",
   "../assets/send.svg",
