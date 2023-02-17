@@ -1,6 +1,6 @@
-import lad from "./lad.png";
-import user from "../assets/user.png";
-import e from "../assets/e.mp3";
+import user from "./assets/user.svg";
+import e from "./assets/sounds/e.mp3";
+import lad from "/lad-icon.png";
 
 const form = document.querySelector("form");
 const chatContainer = document.querySelector("#chat_container");
